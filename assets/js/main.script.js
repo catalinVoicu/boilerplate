@@ -24,7 +24,7 @@ function footerPlay() {
     } else {
     $('.footer .ftr-item .ftr-head').click(function () {
         $(this).parent('.ftr-item').toggleClass('active');
-        $(this).parent().find('.ftr-section').toggle("blind");
+        $(this).parent().find('.ftr-section').toggle("blind", 500);
     });
     }
 
