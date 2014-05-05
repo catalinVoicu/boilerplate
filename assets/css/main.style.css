@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* ======== RESET ========= */
+.cf:before, .grid:before, .cs-grid:before, .row:before, .belt:before, .belt-med:before, .belt-sml:before, .belt-alt:before, .inputbox:before, .checkbox:before, .searchtools:before, .searchfields:before, .cs-head:before, .la-head:before, .cf:after, .grid:after, .cs-grid:after, .row:after, .belt:after, .belt-med:after, .belt-sml:after, .belt-alt:after, .inputbox:after, .checkbox:after, .searchtools:after, .searchfields:after, .cs-head:after, .la-head:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after, .grid:after, .cs-grid:after, .row:after, .belt:after, .belt-med:after, .belt-sml:after, .belt-alt:after, .inputbox:after, .checkbox:after, .searchtools:after, .searchfields:after, .cs-head:after, .la-head:after {
+    clear: both;
+}
+
+.lt-ie8 .cf, .lt-ie8 .grid, .lt-ie8 .cs-grid, .lt-ie8 .row, .lt-ie8 .belt, .lt-ie8 .belt-med, .lt-ie8 .belt-sml, .lt-ie8 .belt-alt, .lt-ie8 .form-row, .lt-ie8 .la-head, .lt-ie8 .cs-head {
+    zoom: 1;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1.5;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+optgroup {
+    font-weight: bold;
+}
+
+/* ======== END Of RESET ========= */
+
+/* -------- Grid System ---------- */
+
+.spring {
+    min-width: 320px;
+    width: 100%;
+    position: relative;
+}
+
+.row {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.grid {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.section {
+    width: 100%;
+    margin: 0 0 50px;
+}
+
+.grid p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.cl {
+    float: left;
+}
+
+.cr {
+    float: right;
+}
+
+@media only screen and (min-width:767px) {
+
+    .cl {
+        padding: 0 0 0 20px;
+    }
+
+    .cr {
+        padding: 0 20px 0 0;
+    }
+
+    .row {
+        padding: 0 15px;
+        max-width: 980px;
+    }
+
+    .col-5 {
+        width: 3%;
+    }
+
+    .col-10 {
+        width: 8%;
+    }
+
+    .col-15 {
+        width: 13%;
+    }
+
+    .col-20 {
+        width: 18%;
+    }
+
+    .col-25 {
+        width: 23%;
+    }
+
+    .col-30 {
+        width: 28%;
+    }
+
+    .col-35 {
+        width: 33%;
+    }
+
+    .col-40 {
+        width: 38%;
+    }
+
+    .col-45 {
+        width: 43%;
+    }
+
+    .col-50 {
+        width: 48%;
+    }
+
+    .col-55 {
+        width: 53%;
+    }
+
+    .col-60 {
+        width: 58%;
+    }
+
+    .col-65 {
+        width: 63%;
+    }
+
+    .col-70 {
+        width: 68%;
+    }
+
+    .col-75 {
+        width: 73%;
+    }
+
+    .col-80 {
+        width: 78%;
+    }
+
+    .col-85 {
+        width: 83%;
+    }
+
+    .col-90 {
+        width: 88%;
+    }
+
+    .col-95 {
+        width: 93%;
+    }
+
+    .col-100 {
+        width: 98%;
+    }
+}
